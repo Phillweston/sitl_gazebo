@@ -1325,6 +1325,10 @@ void GazeboMavlinkInterface::BarometerCallback(BarometerPtr& baro_msg) {
   diff_press_updated_ = true;
 }
 
+void GazeboMavlinkInterface::AdsbCallback(AdsbPtr& adsb_msg) {
+
+}
+
 void GazeboMavlinkInterface::pollForMAVLinkMessages()
 {
   if (gotSigInt_) {
